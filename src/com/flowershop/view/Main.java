@@ -14,9 +14,6 @@ public class Main {
 		controller.afegirFlor(20.5,"vermell");		
 		controller.afegirDecoracio(10.5,"fusta");	
 
-		
-
-
 	}
 
 }
