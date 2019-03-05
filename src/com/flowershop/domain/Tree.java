@@ -10,6 +10,24 @@ public class Tree {
 		this.price = price;
 		this.height = height;
 	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	
+	
 	
 	
 }

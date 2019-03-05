@@ -13,7 +13,8 @@ public class Main {
 		controller.afegirArbre(40.5,18.7);
 		controller.afegirFlor(20.5,"vermell");		
 		controller.afegirDecoracio(10.5,"fusta");	
-
+		controller.veureStock("Floristeria1");
+		
 	}
 
 }

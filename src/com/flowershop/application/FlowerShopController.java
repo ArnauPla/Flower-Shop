@@ -22,7 +22,7 @@ public class FlowerShopController {
 	public void afegirArbre(double price, double height) throws Exception {
 		Tree tree = new Tree(price, height);
 		repository.addTree(tree);
-		System.out.println("S'ha afegit un arbre de " + price + " euros i " + height + " metres.");
+		System.out.println("S'ha afegit un arbre de " + price + " euros i " + height + " metres");
 	}
 
 	public void afegirFlor(double price, String color) throws Exception {
@@ -35,6 +35,39 @@ public class FlowerShopController {
 		Decoration decoration = new Decoration(price, material);
 		repository.addDecoration(decoration);
 		System.out.println("S'ha afegit un arbre de " + price + " euros i de " + material);
+	}
+	
+	public void veureStock(String nameFlowerShop) throws Exception {
+		System.out.println("La floristeria " + nameFlowerShop + " conté: ");
+
+		veureArbres();
+		veureFlors();
+		veureDecoracions();
+
+	}
+	
+	public void veureArbres() {
+		System.out.println("Arbres:");
+		for(int i = 0; i<repository.getAllTrees().size(); i++) {
+			Tree arbre = repository.getAllTrees().get(i);
+			System.out.println("Arbre " + (i + 1) + ": " + arbre.getPrice() + " euros i " + arbre.getHeight() + " metres");
+		}
+	}
+	
+	public void veureFlors() {
+		System.out.println("Flors:");
+		for(int i = 0; i<repository.getAllFlowers().size(); i++) {
+			Flower flor = repository.getAllFlowers().get(i);
+			System.out.println("Flor " + (i + 1) + ": " + flor.getPrice() + " euros i color " + flor.getColor());
+		}
+	}
+	
+	public void veureDecoracions() {
+		System.out.println("Decoracions:");
+		for(int i = 0; i<repository.getAllDecorations().size(); i++) {
+			Decoration decoracio = repository.getAllDecorations().get(i);
+			System.out.println("Decoració " + (i + 1)  + ": " + decoracio.getPrice() + " euros i de " + decoracio.getMaterial());
+		}
 	}
 
 }
