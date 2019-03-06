@@ -6,7 +6,6 @@ public class Flower {
 	protected String color;
 	
 	public Flower(double price, String color) {
-		super();
 		this.price = price;
 		this.color = color;
 	}

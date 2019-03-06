@@ -6,7 +6,6 @@ public class Decoration {
 	protected String material;
 	
 	public Decoration(double price, String material) {
-		super();
 		this.price = price;
 		this.material = material;
 	}

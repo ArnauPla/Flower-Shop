@@ -38,7 +38,7 @@ public class FlowerShopController {
 	}
 	
 	public void veureStock(String nameFlowerShop) throws Exception {
-		System.out.println("La floristeria " + nameFlowerShop + " conté: ");
+		System.out.println("La floristeria " + nameFlowerShop + " contÃ©: ");
 
 		veureArbres();
 		veureFlors();
@@ -66,7 +66,7 @@ public class FlowerShopController {
 		System.out.println("Decoracions:");
 		for(int i = 0; i<repository.getAllDecorations().size(); i++) {
 			Decoration decoracio = repository.getAllDecorations().get(i);
-			System.out.println("Decoració " + (i + 1)  + ": " + decoracio.getPrice() + " euros i de " + decoracio.getMaterial());
+			System.out.println("DecoraciÃ³ " + (i + 1)  + ": " + decoracio.getPrice() + " euros i de " + decoracio.getMaterial());
 		}
 	}
 

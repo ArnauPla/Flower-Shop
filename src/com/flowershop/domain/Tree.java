@@ -6,7 +6,6 @@ public class Tree {
 	protected double height;
 	
 	public Tree(double price, double height) {
-		super();
 		this.price = price;
 		this.height = height;
 	}
@@ -27,7 +26,6 @@ public class Tree {
 		this.height = height;
 	}
 	
-	
-	
+
 	
 }
