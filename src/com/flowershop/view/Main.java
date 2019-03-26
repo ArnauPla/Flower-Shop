@@ -6,14 +6,13 @@ public class Main {
 	
 	private static FlowerShopController controller = new FlowerShopController();
 
-
-	public static void main(String[] args) throws Exception {
-		
-		controller.crearFloristeria("Floristeria1");
-		controller.afegirArbre(40.5,18.7);
-		controller.afegirFlor(20.5,"vermell");		
-		controller.afegirDecoracio(10.5,"fusta");	
-		controller.veureStock("Floristeria1");
+	public static void main(String[] args) throws Exception
+	{
+		controller.createFlowershop("Floristeria1");
+		controller.addTree(40.5,18.7);
+		controller.addFlower(20.5,"vermell");
+		controller.addDecoration(10.5,"fusta");
+		controller.getStock("Floristeria1");
 		
 	}
 
